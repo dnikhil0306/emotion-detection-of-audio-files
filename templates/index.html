@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection Results</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    
+</head>
+<body>
+    
+    
+    <div class="container">
+        <h1 class="heading">Emotion Detection</h1>
+        <div class="upload-section">
+            <h2>Upload Audio File</h2>
+            <input type="file" id="audio-file" accept="audio/*">
+            <button id="predict-button">Predict Emotion</button>
+            <p id="predicted-emotion"></p>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="heading">Analysis</h1>
+        <div class="model-results">
+            <h2>Random Forest Model</h2>
+            <p>Accuracy: <span id="rf-accuracy"></span></p>
+        </div>
+        <div class="model-results">
+            <h2>Decision Tree Model</h2>
+            <p>Accuracy: <span id="dt-accuracy"></span></p>
+        </div>
+        <div class="model-results">
+            <h2>Naive Bayes Model</h2>
+            <p>Accuracy: <span id="nb-accuracy"></span></p>
+        </div>
+        <div class="model-results">
+            <h2>MLP Model</h2>
+            <p>Accuracy: <span id="mlp-accuracy"></span></p>
+        </div>
+       
+    </div>
+
+    
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+
+</body>
+</html>
