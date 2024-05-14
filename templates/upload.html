@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emotion Detection Upload </title>
+    <title>Emotion Detection Upload</title>
     <link rel="stylesheet" href="../static/styles.css">
 </head>
 <body>
-    <div class="upload-section">
-        <h2>Upload Audio File</h2>
-        <input type="file" id="audio-file" accept="audio/*">
-        <button id="predict-button">Predict Emotion</button>
-        <p id="predicted-emotion"></p>
+    <h1 class="up_heading"><img src="../static/images/up_heading.png" alt="Emotion Detection of youe files"></h1>
+    <div class="container">
+        
+        <div class="upload-section">
+            <h2>Upload Audio File</h2>
+            <label for="audio-file" class="custom-file-upload">
+                <img src="../static/images/upload_logo.png" alt="Upload Audio">
+            </label>
+            <input type="file" id="audio-file" accept="audio/*" style="display: none;">
+            
+            <button id="predict-button">Predict Emotion</button>
+            <p id="predicted-emotion"></p>
+        </div>
     </div>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accuracy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1 class="acc_heading"><img src="../static/images/acc_heading.png" alt="Emotion Detection Accuracy"></h1>
+    <div class="container">
+        
+        <div class="model-results">
+            <h2>Random Forest Model</h2>
+            <p>Accuracy: <span id="rf-accuracy"></span></p>
+        </div>
+        <div class="model-results">
+            <h2>Decision Tree Model</h2>
+            <p>Accuracy: <span id="dt-accuracy"></span></p>
+        </div>
+        <div class="model-results">
+            <h2>Naive Bayes Model</h2>
+            <p>Accuracy: <span id="nb-accuracy"></span></p>
+        </div>
+        <div class="model-results">
+            <h2>MLP Model</h2>
+            <p>Accuracy: <span id="mlp-accuracy"></span></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

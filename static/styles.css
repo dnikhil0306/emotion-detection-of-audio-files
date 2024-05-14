@@ -2,19 +2,69 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #25274d;
+    background-color: #082032;;
 }
 
 .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #25274d;
+    background-color: #80b2e8;
     border-radius: 10px;
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.1);
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
+.image-container a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(231, 228, 228, 0.1);
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+    margin: 20px;
+}
+
+.image-container a:hover {
+    transform: scale(1.1);
+}
+
+.image-container img {
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+
+}
+
+
+.home_heading img {
+    max-width: 800px ;
+    height: auto;
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+  }
+  
+
+  .acc_heading img {
+    max-width: 800px ;
+    height: auto;
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+  }
+  
+  .up_heading img {
+    max-width: 800px ;
+    height: auto;
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+    padding: 30px;
+  }
+  
 
 .heading {
     text-align: center;
@@ -26,7 +76,7 @@ body {
 
 .model-results {
     margin-bottom: 20px;
-    background-color: #aaabb8;
+    background-color: #d2edff;
     padding: 15px;
     border-radius: 10px;
 }
@@ -38,7 +88,7 @@ body {
 
 .upload-section {
     text-align: center;
-    background-color: #aaabb8;
+    background-color: #80b2e8;
     padding: 20px;
     border-radius: 10px;
 }
@@ -54,18 +104,42 @@ body {
     padding: 20px;
 }
 
+.custom-file-upload {
+    display: inline-block;
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.custom-file-upload img {
+    width: 100px; /* Adjust the width of the image */
+    height: auto;
+    border: 2px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    padding: 10px; /* Optional: Add padding around the image */
+}
+
+.custom-file-upload:hover img {
+    /* Optional: Apply styles when hovering over the image */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}
+
+
 .upload-section button {
-    background-color: #464866;
+    background-color: #082032;
+    font-weight: bold;
     color: white;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: block; /* Display button on a new line */
-    margin-top: 10px; /* Add margin to separate from input */
-    margin: 0 auto; /* Center the button horizontally */
+    margin-top: 50px; /* Add more space above the button */
+    margin-bottom: 50px; /* Add more space below the button */
+    margin-left: auto; /* Align button to the right */
+    margin-right: auto; /* Align button to the left */
+    width: fit-content; /* Make button width fit its content */
 }
+
 
 
 .upload-section button:hover {
@@ -74,12 +148,13 @@ body {
 
 #predicted-emotion {
     font-weight: bold;
-    color: white;
+    color: #082032;
     margin-top: 10px;
-    background-color: #25274d;
+    background-color: #d2edff;
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
 }
+
 
 
